@@ -1,0 +1,43 @@
+export const metals = [
+    { id: '1',
+        name: 'Gold',
+        image: './assets/gold.jpg',
+        description: 'Resistant to most acids, disolves in Mercury',
+        protons: 79,
+        price: 100 },
+
+    { id: '2',
+        name: 'Silver',
+        image: './assets/silver.jpg',
+        description: 'Higest electrical conductivity, thermal conductivity, and reflectivity  of any metal',
+        protons: 47,
+        price: 60 },
+
+    { id: '3',
+        name: 'Copper',
+        image: './assets/copper.jpg',
+        description: 'Antimicrobial properties',
+        protons: 29,
+        price: 30 },
+
+    { id: '4',
+        name: 'Mercury',
+        image: './assets/mercury.jpg',
+        description: 'Liquid at room temperature',
+        protons: 80,
+        price: 25 },
+
+    { id: '5',
+        name: 'Lead',
+        image: './assets/lead.jpg',
+        description: 'Soft, malleable, low melting point',
+        protons: 82,
+        price: 10 },
+
+    { id: '6',
+        name: 'Aluminium',
+        image: './assets/aluminium.jpg',
+        description: 'Lower density than other common metals',
+        protons: 13,
+        price: 15 },
+];
