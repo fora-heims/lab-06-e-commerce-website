@@ -1,0 +1,32 @@
+table {
+    border: 5px darkblue solid;
+    border-collapse: collapse;
+}
+
+table th {
+    background: darkcyan;
+}
+
+tbody td{
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px darkslateblue dashed;
+}
+
+tfoot td, thead th  {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+button:hover {
+    cursor: pointer;
+    border:darkorange 5px solid;
+}
+
+button {
+    padding: 5px;
+    background-color: dimgrey;
+    border-radius: 10px;
+    color: darkorange
+}
