@@ -1,4 +1,4 @@
-let cartData = [
+export let cartData = [
     {
         id: '2',
         quantity: 6,
@@ -11,4 +11,4 @@ let cartData = [
         id: '6',
         quantity: 25,
     }
-]
+];

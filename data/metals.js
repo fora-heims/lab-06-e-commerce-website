@@ -2,14 +2,14 @@ export const metals = [
     { id: '1',
         name: 'Gold',
         image: './assets/gold.jpg',
-        description: 'Resistant to most acids, disolves in Mercury',
+        description: 'Resistant to most acids, dissolves in Mercury',
         protons: 79,
         price: 100 },
 
     { id: '2',
         name: 'Silver',
         image: './assets/silver.jpg',
-        description: 'Higest electrical conductivity, thermal conductivity, and reflectivity  of any metal',
+        description: 'Highest electrical conductivity, thermal conductivity, and reflectivity  of any metal',
         protons: 47,
         price: 60 },
 

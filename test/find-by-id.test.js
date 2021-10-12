@@ -9,7 +9,7 @@ test('findById() should return the object of the corresponding actual id', (expe
     const expected = { id: '2',
         name: 'Silver',
         image: './assets/silver.jpg',
-        description: 'Higest electrical conductivity, thermal conductivity, and reflectivity  of any metal',
+        description: 'Highest electrical conductivity, thermal conductivity, and reflectivity  of any metal',
         protons: 47,
         price: 60 };
     
