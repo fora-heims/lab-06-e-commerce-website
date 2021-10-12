@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { metals } from './metals.js';
+import { metals } from './data/metals.js';
 import { renderMetal } from './render.js';
 const metalsList = document.getElementById('metals-list');
 
