@@ -17,6 +17,11 @@ export function renderMetal(metal) {
     const pri = document.createElement('p');
     pri.textContent = `Cost per Kilogram: $${metal.price}`;
 
-    metalDiv.append(nam, ima, des, pro, pri);
+    const but = document.createElement('button');
+    but.textContent = 'Add to Cart';
+    but.classList.add('add-button');
+    but.id = metal.id;
+
+    metalDiv.append(nam, ima, des, pro, pri, but);
     return metalDiv;
 }

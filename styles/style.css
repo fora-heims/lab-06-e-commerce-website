@@ -44,3 +44,7 @@ main {
 img {
     width: 200px;
 }
+
+button:hover {
+    cursor: pointer;
+}
