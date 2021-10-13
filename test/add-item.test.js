@@ -2,10 +2,40 @@ import { addItem } from '../src/add-item.js';
 
 const test = QUnit.test;
 
-test('renderMetal() function should return div with name, image, description, protons, and price appended to it', (expect) => {
-    const expected = '<div class="metal-div"><h2>Aluminium</h2><img src="./assets/aluminium.jpg"><p>Lower density than other common metals</p><h3>Atomic Number: 13</h3><p>Cost per Kilogram: $15</p></div>';
+test('addItem() should add an item to the local storage cart', (expect) => {
+    localStorage.removeItem('CART');
+    const expected = [
+        {
+            id: '2',
+            quantity: 7,
+        },
+        {
+            id: '4',
+            quantity: 10,
+        },
+        {
+            id: '6',
+            quantity: 25,
+        }
+    ];
+    const cartData = [
+        {
+            id: '2',
+            quantity: 6,
+        },
+        {
+            id: '4',
+            quantity: 10,
+        },
+        {
+            id: '6',
+            quantity: 25,
+        }
+    ];
+    const cartDataString = JSON.stringify(cartData);
+    localStorage.setItem('CART', cartDataString);
     
-    const actual = renderMetal(metals[5]).outerHTML;
+    const actual = addItem('2');
 
-    expect.equal(actual, expected);
+    expect.deepEqual(actual, expected);
 });
