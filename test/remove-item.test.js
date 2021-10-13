@@ -1,3 +1,5 @@
+import { removeItem } from '../src/remove-item.js';
+
 const test = QUnit.test;
 
 test('renderMetal() function should return div with name, image, description, protons, and price appended to it', (expect) => {

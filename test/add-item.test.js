@@ -1,4 +1,4 @@
-import { addItem } from 
+import { addItem } from '../src/add-item.js';
 
 const test = QUnit.test;
 
