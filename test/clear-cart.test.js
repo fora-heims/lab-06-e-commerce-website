@@ -21,7 +21,7 @@ test('removeItem() should make the cart on local storage empty', (expect) => {
         }
     ];
 
-    localStorage.setItem(JSON.stringify(cart));
+    localStorage.setItem('CART', JSON.stringify(cart));
     
     clearCart();
 
