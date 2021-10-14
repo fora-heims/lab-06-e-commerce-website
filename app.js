@@ -1,6 +1,10 @@
 // import functions and grab DOM elements
 import { metals } from './data/metals.js';
 import { renderMetal } from './render.js';
+import { addItemToCart } from './src/add-item.js';
+// import { getCart } from './src/get-cart.js';
+// import { findById } from './utils.js';
+
 const metalsList = document.getElementById('metals-list');
 
 // initialize global state
@@ -9,6 +13,10 @@ for (let metalObject of metals){
     metalsList.append(metalCard);
 }
 // set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+let addButtons = document.querySelectorAll('.add-button');
+for (let button of addButtons){
+    button.addEventListener('click', () => {
+        addItemToCart(button.id);
+
+    });
+}

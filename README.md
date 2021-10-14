@@ -26,3 +26,5 @@
 * import data and DOM render function
 * locate the element where the products will go
 * loop through the data
+
+# Day three plan

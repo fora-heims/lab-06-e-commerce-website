@@ -3,6 +3,7 @@ export function renderMetal(metal) {
     metalDiv.classList.add('metal-div');
 
     const ima = document.createElement('img');
+    ima.classList.add('metal-image');
     ima.src = metal.image;
 
     const nam = document.createElement('h2');
@@ -17,6 +18,11 @@ export function renderMetal(metal) {
     const pri = document.createElement('p');
     pri.textContent = `Cost per Kilogram: $${metal.price}`;
 
-    metalDiv.append(nam, ima, des, pro, pri);
+    const but = document.createElement('button');
+    but.textContent = 'Add to Cart';
+    but.classList.add('add-button');
+    but.id = metal.id;
+
+    metalDiv.append(nam, ima, des, pro, pri, but);
     return metalDiv;
 }
