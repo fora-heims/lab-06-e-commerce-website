@@ -6,29 +6,29 @@ test('getCart() should return the parsed object from local storage', (expect) =>
     const expected = [
         {
             id: '2',
-            quantity: 6,
+            quantity: 6
         },
         {
             id: '4',
-            quantity: 10,
+            quantity: 10
         },
         {
             id: '6',
-            quantity: 25,
+            quantity: 25
         }
     ];
     const cartData = [
         {
             id: '2',
-            quantity: 6,
+            quantity: 6
         },
         {
             id: '4',
-            quantity: 10,
+            quantity: 10
         },
         {
             id: '6',
-            quantity: 25,
+            quantity: 25
         }
     ];
     let cartDataString = JSON.stringify(cartData);

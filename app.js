@@ -2,6 +2,8 @@
 import { metals } from './data/metals.js';
 import { renderMetal } from './render.js';
 import { addItemToCart } from './src/add-item.js';
+// import { getCart } from './src/get-cart.js';
+// import { findById } from './utils.js';
 
 const metalsList = document.getElementById('metals-list');
 
@@ -15,5 +17,7 @@ let addButtons = document.querySelectorAll('.add-button');
 for (let button of addButtons){
     button.addEventListener('click', () => {
         addItemToCart(button.id);
+        // let cart = getCart();
+        // let itemQuantity = findById(button.id, cart).quantity;
     });
 }
