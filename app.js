@@ -17,7 +17,6 @@ let addButtons = document.querySelectorAll('.add-button');
 for (let button of addButtons){
     button.addEventListener('click', () => {
         addItemToCart(button.id);
-        // let cart = getCart();
-        // let itemQuantity = findById(button.id, cart).quantity;
+
     });
 }

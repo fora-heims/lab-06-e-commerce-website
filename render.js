@@ -3,6 +3,7 @@ export function renderMetal(metal) {
     metalDiv.classList.add('metal-div');
 
     const ima = document.createElement('img');
+    ima.classList.add('metal-image');
     ima.src = metal.image;
 
     const nam = document.createElement('h2');
