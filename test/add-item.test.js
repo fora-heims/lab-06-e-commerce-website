@@ -34,8 +34,7 @@ test('addItem() should add an item to the local storage cart', (expect) => {
     ];
     const cartDataString = JSON.stringify(cartData);
     localStorage.setItem('CART', cartDataString);
-    
-    const actual = addItemToCart('2');
-
+    addItemToCart('2');
+    let actual = JSON.parse(localStorage.getItem('CART'));
     expect.deepEqual(actual, expected);
 });
