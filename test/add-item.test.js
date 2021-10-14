@@ -1,4 +1,4 @@
-import { addItem } from '../src/add-item.js';
+import { addItemToCart } from '../src/add-item.js';
 
 const test = QUnit.test;
 
@@ -35,7 +35,7 @@ test('addItem() should add an item to the local storage cart', (expect) => {
     const cartDataString = JSON.stringify(cartData);
     localStorage.setItem('CART', cartDataString);
     
-    const actual = addItem('2');
+    const actual = addItemToCart('2');
 
     expect.deepEqual(actual, expected);
 });

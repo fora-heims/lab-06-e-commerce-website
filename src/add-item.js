@@ -1,7 +1,7 @@
 import { findById } from '../utils.js';
 import { getCart } from './get-cart.js';
 
-export function addItem(id){
+export function addItemToCart(id){
     let cart = getCart();
     let cartItem = findById(id, cart);
     if (cartItem){
@@ -10,5 +10,6 @@ export function addItem(id){
         const addObject = { 'id': id, 'quantity': 1 };
         cart.push(addObject);
     }
-    return cart;
+    let cartString = JSON.stringify(cart);
+    localStorage.setItem('CART', cartString);
 }
