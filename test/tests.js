@@ -6,3 +6,4 @@ import './DOM-render-cart.test.js';
 import './add-item.test.js';
 import './get-cart.test.js';
 import './clear-cart.test.js';
+import './add-product.test.js';
