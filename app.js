@@ -1,9 +1,11 @@
 // import functions and grab DOM elements
-import { metals } from './data/metals.js';
+// import { metals } from './data/metals.js';
 import { renderMetal } from './render.js';
 import { addItemToCart } from './src/add-item.js';
 // import { getCart } from './src/get-cart.js';
 // import { findById } from './utils.js';
+import { getProducts } from './src/get-products.js';
+let metals = getProducts();
 
 const metalsList = document.getElementById('metals-list');
 
