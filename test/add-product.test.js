@@ -1,6 +1,6 @@
 import { metals } from '../data/metals.js';
 import { addProduct } from '../src/add-product.js';
-import { getProducts } from '../src/get-product.js';
+import { getProducts } from '../src/get-products.js';
 
 const test = QUnit.test;
 
@@ -10,14 +10,14 @@ test('addProduct function should add a product to the localStorage array', (expe
     let string = JSON.stringify(products);
     localStorage.setItem('PRODUCTS', string);
     const newProduct = {
-        id: '6',
+        id: '7',
         name: 'Hydrogen',
-        image: '',
+        image: './assets/aluminium.jpg',
         description: 'yada, yada',
         protons: '1',
         price: 1,
     };
     addProduct(newProduct);
     products = getProducts();
-    expect.equal(products.length, 6);
+    expect.equal(products.length, 7);
 });
